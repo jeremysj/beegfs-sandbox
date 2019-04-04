@@ -12,7 +12,7 @@
   - beegfs-helperd
 
 - name: "BeeGFS client mgmt ip configuration"
-  command: "augtool -t 'Properties incl /etc/beegfs/beegfs-client.conf' set /files/etc/beegfs/beegfs-client.conf/sysMgmtdHost 192.168.44.10"
+  command: "augtool -t 'Properties incl /etc/beegfs/beegfs-client.conf' set /files/etc/beegfs/beegfs-client.conf/sysMgmtdHost 192.168.122.10"
 
 - name: "BeeGFS helperd service"
   service: name=beegfs-helperd state=started enabled=yes
