@@ -12,7 +12,7 @@
   - beegfs-helperd
 
 - name: Install iozone rpm
- yum: name=https://www.rpmfind.net/linux/dag/redhat/el7/en/x86_64/dag/RPMS/iozone-3.424-2.el7.rf.x86_64.rpm
+  yum: name=https://www.rpmfind.net/linux/dag/redhat/el7/en/x86_64/dag/RPMS/iozone-3.424-2.el7.rf.x86_64.rpm
 
 - name: "BeeGFS client mgmt ip configuration"
   command: "augtool -t 'Properties incl /etc/beegfs/beegfs-client.conf' set /files/etc/beegfs/beegfs-client.conf/sysMgmtdHost 192.168.122.10"
