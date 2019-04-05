@@ -17,7 +17,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provider "libvirt" do |lv|
-    lv.memory = "4096"
+    lv.memory = "512"
   end
 
   config.vm.define "mgmt01" do |config|
@@ -35,18 +35,9 @@ Vagrant.configure(2) do |config|
     config.vm.network "private_network", ip: "192.168.122.30"
   end
 
-  config.vm.define "storage02" do |config|
-    config.vm.hostname = "storage02"
-    config.vm.network "private_network", ip: "192.168.122.40"
-  end
-
   config.vm.define "client01" do |config|
     config.vm.hostname = "client01"
     config.vm.network "private_network", ip: "192.168.122.50"
   end
 
-  config.vm.define "client02" do |config|
-    config.vm.hostname = "client02"
-    config.vm.network "private_network", ip: "192.168.122.60"
-  end
 end
