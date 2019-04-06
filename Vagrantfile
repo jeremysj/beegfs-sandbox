@@ -17,7 +17,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provider "libvirt" do |lv|
-    vb.memory = "1024"
+    lv.memory = "4096"
   end
 
   config.vm.define "mgmt01" do |config|
